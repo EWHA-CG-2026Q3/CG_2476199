@@ -285,10 +285,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::S06_SoftwareRasterizer_Finish
   canvasWidth: 256
   canvasHeight: 256
-  vertexA: {x: 128, y: 200}
-  vertexB: {x: 60, y: 60}
-  vertexC: {x: 200, y: 60}
-  fillColor: {r: 1, g: 0.6, b: 0.2, a: 1}
+  vertexA: {x: 40, y: 220}
+  vertexB: {x: 210, y: 180}
+  vertexC: {x: 100, y: 30}
+  fillColor: {r: 0.2, g: 0.4, b: 1, a: 1}
   backgroundColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1290225198
 GameObject:
