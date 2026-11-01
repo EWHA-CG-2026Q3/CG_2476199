@@ -39,7 +39,15 @@ public class S04_CustomDiamondMesh : MonoBehaviour
         mesh.triangles = triangles;
         mesh.RecalculateNormals();
 
-        GetComponent<MeshFilter>().mesh = mesh;
-        GetComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+        //GetComponent<MeshFilter>().mesh = mesh;
+        //GetComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+
+        GetComponent<MeshFilter>().sharedMesh = mesh;
+
+        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+        if (meshRenderer.sharedMaterial == null)   // 재질이 비어 있을 때만 새로 만듦
+        {
+            meshRenderer.sharedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+        }
     }
 }
