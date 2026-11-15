@@ -35,6 +35,9 @@
                 // p = uv * 2;
                 // if (p.x > 1 || p.y > 1) return float4(0.8, 0.8, 0.8, 1);
 
+                // B2 칸만 표면 전체에
+                // p = uv * 0.25 + float2(0.25, 0.5);
+
                 return tex2D(_BaseMap, p);
             }
             ENDHLSL
