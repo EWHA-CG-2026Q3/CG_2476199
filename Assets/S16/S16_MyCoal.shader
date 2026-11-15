@@ -1,5 +1,10 @@
-﻿Shader "CG/S16_MyShader"
+﻿Shader "CG/S16_MyCoal"
 {
+    Properties
+    {
+        _BaseColor ("Base Color", Color) = (0, 0, 0, 1)
+        [HDR] _EmissionColor ("Emission Color", Color) = (1, 1, 1, 1)
+    }
     SubShader
     {
         Pass
